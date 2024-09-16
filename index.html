@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
+<head>
     <title>XYLO - Virtual Assistant</title>
     <link rel="shortcut icon" href="avatar.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <section class="main">
         <div class="image-container">
             <div class="image">
-                <img src="zylo3.webp" alt="image">
+                <img src="zylo3.webp" alt="image" class="robot-image">
             </div>
-            <h1>X Y L O</h1>
-            <p>I m a Virtual Assistant XYLO, How may i help you Sir?</p>
+            <h1 class="title">XYLO</h1>
+            <p class="subtitle">I'm a Virtual Assistant. How may I help you?</p>
         </div>
-        <div class="input">
+        <div class="input-container">
             <button class="talk"><i class="fas fa-microphone-alt"></i></button>
-            <h1 class="content"> Click here to speak</h1>
+            <input type="text" class="content" placeholder="Click here to speak">
         </div>
+        <div class="output-container" id="output-container"></div>
     </section>
     <script src="app.js"></script>
 </body>
